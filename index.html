@@ -1,0 +1,112 @@
+<html>
+<head>
+    <title>Wallify</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Wallify</h1>
+            <p>Esplora la nostra collezione di sfondi in alta definizione, pronti per il download e la condivisione.</p>
+        </div>
+    </header>
+    <main>
+        <section class="gallery">
+            <div class="wallpaper">
+                <img src="img/1.png" alt="Sfondo 1">
+                <div class="actions">
+                    <a href="img/1.png" download>Scarica</a>
+                    <a href="#" onclick="shareImage('images/sfondo1.jpg')">Condividi</a>
+                </div>
+            </div>
+            <div class="wallpaper">
+                <img src="img/2.png" alt="Sfondo 2">
+                <div class="actions">
+                    <a href="img/2.png" download>Scarica</a>
+                    <a href="#" onclick="shareImage('images/sfondo1.jpg')">Condividi</a>
+                </div>
+            </div>
+            <div class="wallpaper">
+                <img src="img/3.png" alt="Sfondo 3">
+                <div class="actions">
+                    <a href="img/3.png" download>Scarica</a>
+                    <a href="#" onclick="shareImage('images/sfondo1.jpg')">Condividi</a>
+                </div>
+            </div>
+            <div class="wallpaper">
+                <img src="img/4.png" alt="Sfondo 4">
+                <div class="actions">
+                    <a href="img/4.png" download>Scarica</a>
+                    <a href="#" onclick="shareImage('images/sfondo1.jpg')">Condividi</a>
+                </div>
+            </div>
+            <div class="wallpaper">
+                <img src="img/5.png" alt="Sfondo 5">
+                <div class="actions">
+                    <a href="img/5.png" download>Scarica</a>
+                    <a href="#" onclick="shareImage('images/sfondo1.jpg')">Condividi</a>
+                </div>
+            </div>
+            <div class="wallpaper">
+                <img src="img/6.png" alt="Sfondo 6">
+                <div class="actions">
+                    <a href="img/6.png" download>Scarica</a>
+                    <a href="#" onclick="shareImage('images/sfondo1.jpg')">Condividi</a>
+                </div>
+            </div>
+            <div class="wallpaper">
+                <img src="img/7.png" alt="Sfondo 7">
+                <div class="actions">
+                    <a href="img/7.png" download>Scarica</a>
+                    <a href="#" onclick="shareImage('images/sfondo1.jpg')">Condividi</a>
+                </div>
+            </div>
+            <div class="wallpaper">
+                <img src="img/8.png" alt="Sfondo 8">
+                <div class="actions">
+                    <a href="img/8.png" download>Scarica</a>
+                    <a href="#" onclick="shareImage('images/sfondo1.jpg')">Condividi</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2>Su di noi</h2>
+                <p>Un portale realizzato da GioSpezia per gli amanti della personalizzazione. Sfondi di qualità per ogni stile.</p>
+            </div>
+            <div class="footer-section links">
+                <h2>Link utili</h2>
+                <ul>
+                    <li><a href="https://giospezia.it/" target="_blank">www.giospezia.it</a></li>
+                    <li><a href="https://www.instagram.com/giospezia06/" target="_blank">Instagram</a></li>
+                    <li><a href="https://paypal.me/GioSpezia" target="_blank">Donazione</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h2>Contattaci</h2>
+                <p>Email: info@wallify.it</p>
+                <p>Telefono: +39 123 456 7890</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Scarica Sfondi. Tutti i diritti riservati.</p>
+        </div>
+    </footer>
+    
+    <script>
+        function shareImage(url) {
+            if (navigator.share) {
+                navigator.share({
+                    title: 'Scarica questo sfondo!',
+                    text: 'Guarda questo bellissimo sfondo che ho trovato!',
+                    url: url,
+                }).catch(console.error);
+            } else {
+                alert('La condivisione non è supportata su questo dispositivo.');
+            }
+        }
+    </script>
+</body>
+</html>
